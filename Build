@@ -1,0 +1,6 @@
+Set Libs "'{Libraries}Stubs.o' '{CLibraries}StdCLib.o' '{Libraries}Runtime.o'  '{Libraries}Interface.o'"
+
+Set Exit 1
+
+C :Tool.c
+Link -d -t 'MPST' -c 'MPS ' -o :Tool {Libs} :Tool.c.o
